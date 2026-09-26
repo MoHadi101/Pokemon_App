@@ -1,0 +1,8 @@
+# CSS aus der Spracherkennung ausschließen
+*.css linguist-detectable=false
+
+# HTML ebenfalls ausschließen (falls gewünscht)
+*.html linguist-detectable=false
+
+# JavaScript als primäre Sprache festlegen
+*.js linguist-language=JavaScript
