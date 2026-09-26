@@ -46,13 +46,18 @@ GET /api/v2/pokemon/{id}/encounters	Fundorte
 ## 🧠 Wie es funktioniert (Kurz)
 Beim Start wird ein einziger Request an /pokemon?limit=1025 geschickt, um alle Namen zu bekommen.
 
+
 Die Liste wird mit lokal verlinkten Sprites (raw.githubusercontent.com) aufgebaut – keine 1025 API-Calls.
+
 
 Klick auf ein Pokémon lädt dessen Details per Promise.all (Pokémon + Fundorte parallel) und legt sie im Cache (pokedex[id]) ab.
 
+
 Erneuter Klick holt die Daten sofort aus dem Cache – kein zweiter Netzwerk-Request.
 
+
 Die Beschreibung wird bevorzugt auf Deutsch geladen, sonst auf Englisch (statt eines festen Index wie in vielen Tutorials).
+
 
 ## 🎨 Design-Highlights
 Dunkler Hintergrund mit radialen Gradients für Tiefe
