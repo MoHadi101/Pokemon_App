@@ -37,12 +37,6 @@ Ein moderner Pokédex als Web-App – gebaut mit **Vanilla JavaScript**, der kos
 
 Keine Frameworks, keine Build-Tools, keine Dependencies – reines Web.
 
-## 🔌 Verwendete API-Endpunkte
-Endpunkt	Zweck
-GET /api/v2/pokemon?limit=1025	Liste aller Pokémon-Namen
-GET /api/v2/pokemon/{id}	Details: Typen, Werte, Fähigkeiten, Sprites
-GET /api/v2/pokemon-species/{id}	Beschreibungstexte (mehrsprachig)
-GET /api/v2/pokemon/{id}/encounters	Fundorte
 ## 🧠 Wie es funktioniert (Kurz)
 Beim Start wird ein einziger Request an /pokemon?limit=1025 geschickt, um alle Namen zu bekommen.
 
