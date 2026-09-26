@@ -37,12 +37,6 @@ Ein moderner Pokédex als Web-App – gebaut mit **Vanilla JavaScript**, der kos
 
 Keine Frameworks, keine Build-Tools, keine Dependencies – reines Web.
 
-## 📂 Projektstruktur
-pokedex/
-├── index.html # Struktur der App
-├── style.css # Modernes Dark-Theme
-├── script.js # Logik & PokéAPI-Anbindung
-└── README.md
 ## 🔌 Verwendete API-Endpunkte
 Endpunkt	Zweck
 GET /api/v2/pokemon?limit=1025	Liste aller Pokémon-Namen
