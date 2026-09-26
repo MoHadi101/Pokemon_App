@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokédex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- <div class="topbar">
+  <h1>Pokédex <span class="badge">Gen I</span></h1>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Pokémon suchen…" autocomplete="off">
+  </div>
+</div> -->
+<div class="topbar">
+  <h1>
+    <svg class="pokeball" viewBox="0 0 100 100" aria-hidden="true">
+      <circle cx="50" cy="50" r="46" fill="#fff" stroke="#111" stroke-width="6"/>
+      <path d="M4 50 A46 46 0 0 1 96 50 Z" fill="#ee1515"/>
+      <line x1="4" y1="50" x2="96" y2="50" stroke="#111" stroke-width="6"/>
+      <circle cx="50" cy="50" r="15" fill="#111"/>
+      <circle cx="50" cy="50" r="10" fill="#fff"/>
+      <circle cx="50" cy="50" r="5"  fill="#fff" stroke="#111" stroke-width="3"/>
+    </svg>
+    Pokédex
+  </h1>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Pokémon suchen…" autocomplete="off">
+  </div>
+</div>
+
+<main class="content-box">
+  <!-- Detail-Panel -->
+  <section id="pokemon-info" class="panel">
+    <div class="loading" id="loading">Lade Daten…</div>
+
+    <div id="pokemon-detail" hidden>
+      <div class="detail-header">
+        <img id="pokemon-img" src="" alt="Pokémon">
+        <div class="detail-title">
+          <span id="pokemon-number" class="number">#001</span>
+          <h2 id="pokemon-name">—</h2>
+          <div id="pokemon-types" class="types"></div>
+        </div>
+      </div>
+
+      <div class="meta">
+        <div class="meta-item">
+          <span class="label">Größe</span>
+          <span id="pokemon-height">—</span>
+        </div>
+        <div class="meta-item">
+          <span class="label">Gewicht</span>
+          <span id="pokemon-weight">—</span>
+        </div>
+      </div>
+
+      <p id="pokemon-description" class="description"></p>
+
+      <div class="section">
+        <h3>Basiswerte</h3>
+        <div id="pokemon-stats" class="stats"></div>
+      </div>
+
+      <div class="section">
+        <h3>Fähigkeiten</h3>
+        <div id="pokemon-abilities" class="abilities"></div>
+      </div>
+
+      <div class="section">
+        <h3>Fundorte</h3>
+        <div id="pokemon-locations" class="locations"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Liste -->
+  <aside id="pokemon-list" class="panel list"></aside>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
